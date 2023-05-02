@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>jspweb</display-name>
+
+	
+	<servlet>
+		<servlet-name>cadastrar</servlet-name>
+		<servlet-class>usuario.controller.cadastrarUsuarioController</servlet-class>
+	</servlet>
+	
+	
+
+	<servlet>
+		<servlet-name>consultar</servlet-name>
+		<servlet-class>usuario.controller.consultarUsuarioController</servlet-class>
+	
+	</servlet>
+	
+	
+	<servlet>
+		<servlet-name>alterar</servlet-name>
+		<servlet-class>usuario.controller.alterarUsuarioController</servlet-class>
+	
+	</servlet>
+	
+	
+	
+	<servlet>
+		<servlet-name>modificar</servlet-name>
+		<servlet-class>usuario.controller.modificarUsuarioController</servlet-class>
+	
+	</servlet>
+	
+	
+		
+	<servlet-mapping>
+		<servlet-name>cadastrar</servlet-name>
+		<url-pattern>/cadastrarUsuario</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet-mapping>
+		<servlet-name>consultar</servlet-name>
+		<url-pattern>/consultarUsuario</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>modificar</servlet-name>
+		<url-pattern>/modificarUsuario</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>alterar</servlet-name>
+		<url-pattern>/alterarUsuario</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+</web-app>
